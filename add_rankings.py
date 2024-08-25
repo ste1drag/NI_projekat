@@ -136,3 +136,9 @@ def add_rankings(path):
     data.loc[data["season_team_id"] == "E2022_ZAL", "ranking"] = 9
     data.loc[data["season_team_id"] == "E2022_PAM", "ranking"] = 13
     data.loc[data["season_team_id"] == "E2022_BER", "ranking"] = 17
+
+    return data
+
+data = add_rankings('data/euroleague_teams.csv')
+
+print(data[data['ranking'].notna()])
