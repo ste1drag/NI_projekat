@@ -137,6 +137,26 @@ def add_rankings(path):
     data.loc[data["season_team_id"] == "E2022_PAM", "ranking"] = 13
     data.loc[data["season_team_id"] == "E2022_BER", "ranking"] = 17
 
+    #2024 season
+    data.loc[data["season_team_id"] == "E2023_MUN", "actual_ranking"] = 15
+    data.loc[data["season_team_id"] == "E2023_BAR", "actual_ranking"] = 5
+    data.loc[data["season_team_id"] == "E2023_BAS", "actual_ranking"] = 9
+    data.loc[data["season_team_id"] == "E2023_PAR", "actual_ranking"] = 11
+    data.loc[data["season_team_id"] == "E2023_VIR", "actual_ranking"] = 8
+    data.loc[data["season_team_id"] == "E2023_MCO", "actual_ranking"] = 3
+    data.loc[data["season_team_id"] == "E2023_IST", "actual_ranking"] = 10
+    data.loc[data["season_team_id"] == "E2023_MAD", "actual_ranking"] = 1
+    data.loc[data["season_team_id"] == "E2023_MIL", "actual_ranking"] = 12
+    data.loc[data["season_team_id"] == "E2023_OLY", "actual_ranking"] = 4
+    data.loc[data["season_team_id"] == "E2023_PAN", "actual_ranking"] = 2
+    data.loc[data["season_team_id"] == "E2023_RED", "actual_ranking"] = 16
+    data.loc[data["season_team_id"] == "E2023_TEL", "actual_ranking"] = 6
+    data.loc[data["season_team_id"] == "E2023_ULK", "actual_ranking"] = 7
+    data.loc[data["season_team_id"] == "E2023_ASV", "actual_ranking"] = 17
+    data.loc[data["season_team_id"] == "E2023_ZAL", "actual_ranking"] = 13
+    data.loc[data["season_team_id"] == "E2023_PAM", "actual_ranking"] = 14
+    data.loc[data["season_team_id"] == "E2023_BER", "actual_ranking"] = 18
+
     return data
 
 data = add_rankings('data/euroleague_teams.csv')
